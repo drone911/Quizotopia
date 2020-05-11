@@ -23,7 +23,7 @@ app.use(function(req, res, next) {
 app.use(express.static(path.join(__dirname, 'angular')))
 app.use("/api", apiRoutes);
 app.use("/", (req, res, next) => {
-    res.sendFile(path.join(__dirname, 'angular', 'index.html'));
+    res.sendFile(path.join(__dirname, 'angular-dist', 'index.html'));
 })
 app.listen(app.get('port'), () => {
     console.log("started server "+ app.get('port'));
