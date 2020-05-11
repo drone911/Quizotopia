@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
     );
     next();
 });
-app.use(express.static(path.join(__dirname, 'angular')))
+app.use(express.static(path.join(__dirname, 'angular-dist')))
 app.use("/api", apiRoutes);
 app.use("/", (req, res, next) => {
     res.sendFile(path.join(__dirname, 'angular-dist', 'index.html'));
