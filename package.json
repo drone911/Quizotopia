@@ -4,7 +4,7 @@
   "description": "An app that quizes you randomly",
   "main": "server.js",
   "scripts": {
-    "npm run":  ""
+    "npm run":  "server.js"
   },
   "author": "drone911",
   "license": "ISC",
