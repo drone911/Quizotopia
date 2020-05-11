@@ -1,0 +1,166 @@
+
+* {
+    box-sizing: border-box;
+    cursor: default;
+    text-align: center;
+}
+
+@media (min-width: 50rem) {
+    .row{
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    .all{
+        background-image: url('./../../assets/quiz_header.jpg');
+        background-position: center;
+    }
+}
+/* header
+==================*/
+
+div.header{
+    width: 100%;
+    height: 2.5rem;
+    background-color: black;
+    
+}
+div.header h3{
+    font-size: 2rem; 
+    color: white;
+    margin: 0;
+}
+
+
+/* hero
+=========================*/
+
+div.hero{
+    background-color: #C713CE;
+    width: 100%;
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    justify-items: center;
+}
+div.hero h1{
+    color: white;
+    font-size: 4rem;
+    margin: 0px;
+    transform:  translateX(+3%);
+}
+div.hero h2{
+    margin: 0px;
+    color: black;
+    font-style: italic;
+    font-size: 2rem;
+    transform:  translateX(+3%);
+}
+div.hero .top{
+    display: inline-flex;
+    align-items: baseline;
+    position: relative;
+    transform: translateY(-90%) translateX(-10%);
+}
+div.hero .bottom{
+    position: absolute;
+    display: inline-flex;
+    align-items: initial;
+    justify-content: center;
+    transform: translateX(9%) translateY(-5%);
+}
+
+@media (min-width: 33.5rem) {
+    div.hero {
+        padding-top: 3rem;
+    }
+    div.hero h1{
+        font-size: 6rem;
+    }
+    div.hero h2{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    div.hero {
+        padding-top: 4rem;
+    }
+    div.hero h1{
+        font-size: 8rem;
+    }
+    div.hero h2{
+        font-size: 4rem;
+    }
+}
+/* footer
+=========================*/
+div.foot{
+    display: flex;
+    width: 100%;
+    height: 38vh;
+    background-color: #C0C0C0;
+    justify-content: center;
+    align-items: center;
+}
+.but{
+    position: relative;
+    border: 0px;
+    padding: 0.6em 1em;
+    text-align: center;
+    background-color: #13CE66;
+    border-radius: 2vh;
+    color: white;
+    cursor: pointer !important;
+}
+.but h3{
+    cursor: pointer !important;
+}
+.but:hover{
+    background-color: rgb(21, 184, 94);
+    animation: none;
+}
+
+.hidden_but {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.hidden_but a {
+    margin-right: 0.5em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    transition: 0.4s;
+}
+#easy {
+    border: 3px solid rgb(255, 56, 56);
+}
+#medium {
+    border: 3px solid rgb(179, 32, 32);
+}
+#hard {
+    border: 3px solid rgb(131, 17, 17);
+}
+#easy:hover {
+    background-color: rgb(255, 56, 56);
+}
+#medium:hover {
+    background-color: rgb(179, 32, 32);
+}
+#hard:hover {
+    background-color: rgb(131, 17, 17);
+}
+@media (min-width:50rem) {
+    .but h3{
+        font-size: 2.5rem;
+    }
+    .hidden_but a {
+        font-size: 1.25rem;
+    }
+}

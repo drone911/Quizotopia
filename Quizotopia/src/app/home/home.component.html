@@ -1,0 +1,32 @@
+<div class="all">
+    <div class="row">
+        <div class="header">
+            <h3>By Drone911</h3>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="hero">
+            <div class="top">
+                <h1>Quizo</h1>
+                <h2>Quizzes</h2>
+            </div>
+            <div class="bottom">
+                <h2>Random</h2>
+                <h1>Topia</h1>            
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="foot">
+            <button class="but" (click)="toggleHiddenButtons()" [@displaceButton]="hiddenButtonState">
+                <h3>Select Difficulty</h3>
+            </button>
+            <div class="hidden_but" [@showButtons]="hiddenButtonState">
+                <a [routerLink]="['quizes','easy']" id="easy">Easy</a>
+                <a [routerLink]="['quizes','medium']" id="medium">Medium</a>
+                <a [routerLink]="['quizes','hard']" id="hard">Hard</a>
+            </div>
+        </div>
+    </div>
+</div>

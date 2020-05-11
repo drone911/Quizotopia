@@ -1,0 +1,2 @@
+<app-quiz [quiz] = "quizes[quizNumber]" [status] = "{ currentQuiz: quizNumber+1, totalQuiz: totalQuizes}" (nextQuiz)="nextQuiz($event)" *ngIf="loaded && !showResult"></app-quiz>
+<app-result *ngIf="showResult" [quizStats] = "{ answeredCorrectly: answeredCorrectly, totalQuizes: totalQuizes, difficulty: difficulty}"></app-result>

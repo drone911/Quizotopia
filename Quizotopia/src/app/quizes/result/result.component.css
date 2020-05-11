@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.all {
+    color: ivory;
+    height: 100vh;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tryAgain {
+}
+a {
+    text-decoration: none;
+}
+a h3{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 0.5em 0.5em;
+    border-radius: 10px;
+    transition: ease-in 0.2s;
+}
+a h3:hover {
+    transform: scale(1.1);
+}
+

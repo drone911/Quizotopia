@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.container{
+    max-width: 100%;
+    margin: auto 0;
+    height: 100vh;
+    background-color: #3fd059;
+}
+
+@keyframes backgroundColorToRed {
+    to{
+        background-color: red;
+    }
+}
+/* 
+header###############
+#####################
+*/
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.status {
+    display: flex;
+    justify-content: space-evenly;
+}
+#timer {
+    display: inline-block;
+    padding: 0.2rem 0.5em;
+    margin-top: 0.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: ivory;
+}
+#status {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    margin-top: 0.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: ivory;
+}
+#question {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    margin-top: 0.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: ivory;    
+}
+
+@media (min-width: 40rem) {
+    .status h3{
+        font-size: 3rem;
+    }
+    .question h3{
+        font-size: 3rem;
+    }
+}
+
+/*
+form######################
+#######################*/
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"] {
+    opacity: 1 ;
+    position: fixed;
+    width: 0;
+}
+label {
+
+    font-size: 1.3rem;
+    width: 100%;
+    max-width: 27rem;
+    padding: 0.3em 0.5em;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: ivory;
+    transition: linear 0.2s;
+}
+input[type="radio"]:checked + label{
+    background-color:#bfb;
+    transform: scale(1.0125);
+}
+input[type="radio"]:hover + label{
+    transform: scale(1.0125);
+}
+.submit button {
+    font-size: 1.3rem;
+    width: 100%;
+    max-width: 27rem;
+    padding: 0.3em 0.5em;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    border: 0px solid black;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    bottom: 0;
+    transition: linear 0.2s;
+}
+@media (min-width: 62rem) {
+    .options{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto 0;
+    }
+    label {
+        margin: 1rem 2.2rem;
+    }
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
