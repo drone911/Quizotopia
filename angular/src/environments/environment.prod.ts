@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backendUrl: 'http://quizotopia.herokuapp.com/'
+  backendUrl: 'http://quizotopia.herokuapp.com'
 };
