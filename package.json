@@ -9,7 +9,7 @@
   "author": "drone911",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "xlsx": "^0.16.0"
   }
 }
